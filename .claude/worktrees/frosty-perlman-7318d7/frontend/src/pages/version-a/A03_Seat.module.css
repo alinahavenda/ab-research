@@ -1,0 +1,221 @@
+.page {
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+.header {
+  background: var(--color-primary);
+  padding: .75rem 1.25rem;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.back {
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font-size: .875rem;
+  padding: 0;
+  opacity: .85;
+}
+.back:hover { opacity: 1; }
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.main {
+  padding: 1.25rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.routeSummary {
+  background: var(--color-white);
+  border-radius: 8px;
+  padding: .75rem 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .06);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.routeLabel {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.routeCarrier {
+  font-size: .8125rem;
+  color: var(--color-muted);
+}
+
+/* ── Legend ── */
+.legend {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: .375rem;
+  font-size: .8125rem;
+  color: #374151;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.dotFree     { background: var(--color-white); border: 1.5px solid #D1D5DB; }
+.dotOccupied { background: #E5E7EB; border: 1.5px solid #D1D5DB; }
+.dotChosen   { background: var(--color-primary); border: 1.5px solid var(--color-primary); }
+
+/* ── Bus shell ── */
+.busShell {
+  background: var(--color-white);
+  border: 1.5px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+}
+
+.driverSection {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .75rem;
+  padding-bottom: .75rem;
+  border-bottom: 2px dashed #E5E7EB;
+}
+
+.driverIcon  { font-size: 1.25rem; }
+.driverLabel { font-size: .8125rem; color: var(--color-muted); }
+
+.colLabels {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr 1fr 0.5rem 1fr 1fr;
+  gap: .375rem;
+  margin-bottom: .375rem;
+  padding-left: 0;
+}
+
+.colLabel {
+  text-align: center;
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: .375rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr 1fr 0.5rem 1fr 1fr;
+  gap: .375rem;
+  align-items: center;
+}
+
+.aisle {
+  background: transparent;
+}
+
+.rowNum {
+  font-size: .75rem;
+  color: var(--color-muted);
+  text-align: center;
+}
+
+/* ── Seat button ── */
+.seat {
+  aspect-ratio: 1;
+  border: 1.5px solid #D1D5DB;
+  border-radius: 6px;
+  background: var(--color-white);
+  font-size: .75rem;
+  font-weight: 500;
+  color: #374151;
+  transition: background .12s, border-color .12s, color .12s;
+}
+
+
+.seat:not(:disabled):hover {
+  background: rgba(46, 95, 163, .08);
+  border-color: var(--color-primary);
+}
+
+.occupied {
+  background: #F3F4F6;
+  color: #D1D5DB;
+  border-color: #E5E7EB;
+  cursor: not-allowed;
+}
+
+.hover {
+  background: rgba(46, 95, 163, .1);
+  border-color: var(--color-primary);
+}
+
+.chosen {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* ── Tooltip ── */
+.tooltip {
+  margin-top: .875rem;
+  background: #F3F4F6;
+  border-radius: 6px;
+  padding: .5rem .75rem;
+  font-size: .8125rem;
+  color: #374151;
+  min-height: 2rem;
+}
+
+.tooltipHint {
+  color: var(--color-muted);
+}
+
+/* ── Selection info + button ── */
+.selectedInfo {
+  margin-top: .875rem;
+  font-size: .875rem;
+  color: #374151;
+}
+
+.nextBtn {
+  width: 100%;
+  margin-top: 1.25rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 6px;
+  padding: .75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: opacity .15s;
+}
+
+.nextBtn:hover:not(:disabled) {
+  opacity: .88;
+}
+
+.nextBtn:disabled {
+  background: #9CA3AF;
+  cursor: not-allowed;
+}

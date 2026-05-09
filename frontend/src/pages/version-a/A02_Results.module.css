@@ -1,0 +1,234 @@
+.page {
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+/* ── Header ── */
+.header {
+  background: var(--color-primary);
+  padding: .75rem 1.25rem;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.back {
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font-size: .875rem;
+  padding: 0;
+  white-space: nowrap;
+  opacity: .85;
+}
+.back:hover { opacity: 1; }
+
+.headerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.route {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.meta {
+  font-size: .75rem;
+  opacity: .85;
+}
+
+/* ── Filter bar — all 5 filters visible (H3 baseline) ── */
+.filterBar {
+  background: var(--color-white);
+  border-bottom: 1px solid #E5E7EB;
+  padding: .75rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  align-items: center;
+}
+
+.filterGroup {
+  display: flex;
+  align-items: center;
+  gap: .375rem;
+}
+
+.filterLabel {
+  font-size: .75rem;
+  color: var(--color-muted);
+  white-space: nowrap;
+}
+
+.filterSelect {
+  border: 1px solid #D1D5DB;
+  border-radius: 4px;
+  padding: .25rem .5rem;
+  font-size: .8125rem;
+  background: var(--color-white);
+}
+
+.filterCheck {
+  display: flex;
+  align-items: center;
+  gap: .375rem;
+  font-size: .8125rem;
+  color: #374151;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.filterCheck input {
+  accent-color: var(--color-primary);
+  width: 15px;
+  height: 15px;
+}
+
+/* ── Main ── */
+.main {
+  padding: 1rem 1.25rem 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.found {
+  font-size: .8125rem;
+  color: var(--color-muted);
+  margin-bottom: .75rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+/* ── Route card ── */
+.card {
+  background: var(--color-white);
+  border: 1.5px solid #E5E7EB;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: border-color .15s, box-shadow .15s;
+}
+
+.card:hover {
+  border-color: #9CA3AF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .07);
+}
+
+.cardSelected {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(46, 95, 163, .1);
+}
+
+/* Row 1: meta — intentionally dense (H3 baseline) */
+.cardMeta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .625rem;
+  font-size: .8125rem;
+  color: #374151;
+}
+
+.carrier {
+  font-weight: 600;
+  color: #111827;
+  font-size: .9375rem;
+}
+
+.rating {
+  color: #F59E0B;
+  font-size: .8125rem;
+}
+
+.routeNum {
+  background: #F3F4F6;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: .75rem;
+  color: var(--color-muted);
+}
+
+.busType {
+  font-size: .75rem;
+  color: var(--color-muted);
+}
+
+/* Row 2: times + price */
+.cardMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.times {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.depart,
+.arrive {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.arrow {
+  color: var(--color-muted);
+  font-size: 1rem;
+}
+
+.duration {
+  font-size: .75rem;
+  color: var(--color-muted);
+  margin-left: .25rem;
+}
+
+.priceBlock {
+  text-align: right;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.perPax {
+  display: block;
+  font-size: .7rem;
+  color: var(--color-muted);
+}
+
+/* Row 3: button */
+.cardFooter {
+  margin-top: .875rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.selectBtn {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 6px;
+  padding: .5rem 1.25rem;
+  font-size: .9375rem;
+  font-weight: 600;
+  transition: opacity .15s;
+}
+
+.selectBtn:hover {
+  opacity: .88;
+}

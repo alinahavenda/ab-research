@@ -1,0 +1,101 @@
+[
+  {
+    "id": "r1",
+    "carrier": "АвтоЛюкс",
+    "rating": 4.2,
+    "routeNumber": "AL-101",
+    "busType": "Mercedes Tourismo",
+    "from": "Львів", "to": "Київ",
+    "depart": "08:00", "arrive": "14:30",
+    "duration": "6г 30хв",
+    "price": 450
+  },
+  {
+    "id": "r2",
+    "carrier": "Gunsel",
+    "rating": 3.8,
+    "routeNumber": "GS-55",
+    "busType": "Neoplan",
+    "from": "Львів", "to": "Київ",
+    "depart": "10:15", "arrive": "17:00",
+    "duration": "6г 45хв",
+    "price": 380
+  },
+  {
+    "id": "r3",
+    "carrier": "FlixBus",
+    "rating": 4.0,
+    "routeNumber": "FB-12",
+    "busType": "MAN Lion's Coach",
+    "from": "Львів", "to": "Київ",
+    "depart": "14:00", "arrive": "20:30",
+    "duration": "6г 30хв",
+    "price": 410
+  },
+  {
+    "id": "r4",
+    "carrier": "ПолтаваТранс",
+    "rating": 4.5,
+    "routeNumber": "PT-202",
+    "busType": "Setra",
+    "from": "Харків", "to": "Одеса",
+    "depart": "07:00", "arrive": "15:45",
+    "duration": "8г 45хв",
+    "price": 520
+  },
+  {
+    "id": "r5",
+    "carrier": "АвтоЛюкс",
+    "rating": 4.2,
+    "routeNumber": "AL-305",
+    "busType": "Mercedes Tourismo",
+    "from": "Харків", "to": "Одеса",
+    "depart": "09:30", "arrive": "18:10",
+    "duration": "8г 40хв",
+    "price": 490
+  },
+  {
+    "id": "r6",
+    "carrier": "Gunsel",
+    "rating": 3.9,
+    "routeNumber": "GS-77",
+    "busType": "Neoplan",
+    "from": "Київ", "to": "Харків",
+    "depart": "06:30", "arrive": "13:00",
+    "duration": "6г 30хв",
+    "price": 320
+  },
+  {
+    "id": "r7",
+    "carrier": "ПолтаваТранс",
+    "rating": 4.3,
+    "routeNumber": "PT-110",
+    "busType": "Setra",
+    "from": "Київ", "to": "Харків",
+    "depart": "11:00", "arrive": "17:30",
+    "duration": "6г 30хв",
+    "price": 350
+  },
+  {
+    "id": "r8",
+    "carrier": "АвтоЛюкс",
+    "rating": 4.1,
+    "routeNumber": "AL-220",
+    "busType": "Mercedes Tourismo",
+    "from": "Дніпро", "to": "Київ",
+    "depart": "08:45", "arrive": "14:15",
+    "duration": "5г 30хв",
+    "price": 400
+  },
+  {
+    "id": "r9",
+    "carrier": "FlixBus",
+    "rating": 3.7,
+    "routeNumber": "FB-33",
+    "busType": "MAN Lion's Coach",
+    "from": "Дніпро", "to": "Київ",
+    "depart": "13:00", "arrive": "18:45",
+    "duration": "5г 45хв",
+    "price": 360
+  }
+]
